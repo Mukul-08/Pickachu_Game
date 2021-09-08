@@ -54,10 +54,8 @@ setInterval(() => {
         obstacle.classList.remove('obstacleAni');
         audio.play();
         setTimeout(() => {
-           
             audiogo.pause();
-            audio.pause();
-            
+            audio.pause();     
         }, 2000);
     }
     else if(offsetX< 145 && cross){
