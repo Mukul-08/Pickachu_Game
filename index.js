@@ -10,7 +10,6 @@ setTimeout(()=>{
 }, 1000);
 
 
-
 document.onkeydown = function(e){
     console.log("key code is: ", e.keyCode)
     if(e.keyCode==32){
@@ -54,8 +53,10 @@ setInterval(() => {
         obstacle.classList.remove('obstacleAni');
         audio.play();
         setTimeout(() => {
+           
             audiogo.pause();
-            audio.pause();     
+            audio.pause();
+            
         }, 2000);
     }
     else if(offsetX< 145 && cross){
